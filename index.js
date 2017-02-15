@@ -18,7 +18,7 @@ const args = minimist(process.argv.slice(2), {
 });
 
 if (args._.length < 1) {
-    console.error("Usage: gogs-clone <gogs-url> --token <access-token>");
+    console.error("Usage: gogs-clone-all <gogs-url> --token <access-token>");
     return;
 }
 

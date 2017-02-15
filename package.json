@@ -1,10 +1,10 @@
 {
-  "name": "gogs-clone",
+  "name": "gogs-clone-all",
   "version": "1.0.0",
   "description": "A command line utility to clone all user repositories from a gogs server.",
   "main": "index.js",
   "bin": {
-    "gogs-clone": "./bin/gogs-clone"
+    "gogs-clone-all": "./bin/gogs-clone-all"
   },
   "repository": {
     "type": "git",

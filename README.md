@@ -1,4 +1,4 @@
-# gogs-clone
+# gogs-clone-all
 A command line utility to bulk clone repositories from a gogs server
 
 
