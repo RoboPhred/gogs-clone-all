@@ -13,14 +13,16 @@ const gogsApiRoot = '/api/v1';
 
 
 
-const args = minimist(process.argv.slice(2));
+const args = minimist(process.argv.slice(2), {
+    string: ['dir', 'token']
+});
 
 if (args._.length < 1) {
     console.error("Usage: gogs-clone <gogs-url> --token <access-token>");
     return;
 }
 
-const targetDir = process.cwd();
+const targetDir = args['dir'] || args['d'] || process.cwd();
 
 const targetUrl = args._[0];
 const accessToken = args['token'] || args['t'] || null;
@@ -28,7 +30,7 @@ const accessToken = args['token'] || args['t'] || null;
 
 if (accessToken == null) {
     console.error("Access token must be specified with --token.");
-    return;
+    process.exit(1);
 }
 
 const targetApiUrl = urljoin(targetUrl, gogsApiRoot);
