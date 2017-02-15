@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "A command line utility to clone all user repositories from a gogs server.",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "bin": {
+    "gogs-clone": "./bin/gogs-clone"
   },
   "repository": {
     "type": "git",
