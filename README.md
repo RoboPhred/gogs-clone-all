@@ -9,3 +9,9 @@ Usage:
 ```
 gogs-clone --token=<access-token> <url>
 ```
+
+Options:
+```
+-t, --token: Required.  The access token for the user to clone repos for.
+-d, --dir: Optional.  The root directory to clone to.  If not specified, the current working directory is used.
+```
