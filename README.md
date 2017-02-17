@@ -7,7 +7,7 @@ Repositories will be cloned into directories based on the full name of the repos
 
 Usage:
 ```
-gogs-clone --token=<access-token> <url>
+gogs-clone-all --token=<access-token> <url>
 ```
 
 Options:
